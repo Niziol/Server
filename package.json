@@ -1,0 +1,22 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start:build": "tsc -w",
+		"start:run": "nodemon build/index.js",
+		"start": "concurrently npm:start:*"
+	},
+	"keywords": [],
+	"author": "Niziol",
+	"license": "ISC",
+	"dependencies": {
+		"@types/cookie-session": "^2.0.44",
+		"@types/express": "^4.17.17",
+		"concurrently": "^7.6.0",
+		"cookie-session": "^2.0.0",
+		"express": "^4.18.2",
+		"nodemon": "^2.0.22"
+	}
+}
